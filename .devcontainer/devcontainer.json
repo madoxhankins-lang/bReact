@@ -1,0 +1,15 @@
+{
+  "name": " exercise Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:18",
+  "forwardPorts": [5173],
+  "postCreateCommand": "npm install -g create-vite && npm create vite@latest . --template react-ts --yes && npm install prop-types && npm install && npx tsc --init",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-typescript-tslint-plugin"
+      ]
+    }
+  }
+}
