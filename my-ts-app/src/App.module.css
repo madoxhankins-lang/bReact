@@ -1,0 +1,153 @@
+.appShell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  color: #1f2937;
+}
+
+.appHeader {
+  padding: 2rem 2rem 1rem;
+  text-align: center;
+}
+
+.appHeader h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #111827;
+}
+
+.contentArea {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.greetingCard {
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.15);
+  color: white;
+  min-height: 220px;
+  display: flex;
+  align-items: stretch;
+}
+
+.cardContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.greetingCard h2 {
+  margin: 0;
+  font-size: clamp(1.6rem, 2vw, 2.2rem);
+  color: white;
+}
+
+.greetingCard p {
+  margin: 0;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.metaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.metaRow span {
+  background: rgba(255, 255, 255, 0.14);
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  backdrop-filter: blur(6px);
+}
+
+.colorList {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.colorSwatch {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.15);
+}
+
+.bottomPanel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.buttonPanel,
+.listPanel {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 16px;
+  padding: 1.3rem;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.buttonPanel h3,
+.listPanel h3 {
+  margin: 0 0 1rem;
+  color: #111827;
+}
+
+.actionButton {
+  border: none;
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.85rem 1.3rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 12px 20px rgba(37, 99, 235, 0.2);
+}
+
+.actionButton:hover {
+  transform: translateY(-1px);
+}
+
+.listItems {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.6rem;
+  color: #374151;
+}
+
+.appFooter {
+  padding: 1.2rem 1rem 2rem;
+  text-align: center;
+  color: #374151;
+  font-weight: 500;
+}
